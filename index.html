@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<!--the 'lang'attribute is used to identify the language of text content on the web. Inn this cae we are using English 'en'-->
+<!--The charset attribute specifies the character encoding for the HTML document-->
+<!--The title is CV Design -->
+<!--'rel' specifies the relationship between the current document and the linked document-->
+<!--'href' specifies the location of the linked document-->
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <title>CV Design</title>
+        <link rel="stylesheet" href="styles.css"> 
+        <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>   
+    </head>
+    <!-- This is where the content is kept - between the body tags -->
+    <!--A <div> section in a document that is styled with CSS-->
+    <!--The class attribute is often used to point to a class name in a style sheet, eg Curriculum_Vitae, CV_left,etc-->
+    <!--upload the profile picture on the left side of the cv-->
+    <!--add name,title,contact details,skills and social media details on the left side of the cv-->
+    <body>
+        <div class = "Curriculum_Vitae">
+            <div class = "CV_left">
+                <div class="CV_profile">
+                    <img src="profile.jpg" alt="profile_pic">
+                </div>
+                <div class="CV_content">
+                    <div class="CV_item CV_info">
+                        <div class="title">
+                            <p class = "bold">Mamela Jikwana</p>
+                            <p class="regular">Software Engineer</p>
+                        </div>
+                        <!--create an unordered list for contact details-->
+                        <ul>
+                            <li>
+                                <!--add icons from Font Awesome and add necessary contact details-->
+                                <div class="icon"><i class="fas fa-map-pin" aria-hidden="true"></i></div>
+                                <div class="data">
+                                    21 Kraalnaboom Avenue, Rooihuiskraal, Centurion
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon"><i class="fas fa-mobile-alt" aria-hidden="true"></i></div>
+                                <div class="data">
+                                    081 210 4563
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon"><i class="far fa-envelope" aria-hidden="true"></i></div>
+                                <div class="data">
+                                    mljikwana@gmail.com
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--create a class for skills-->
+                    <!--the title 'skills' show be in bold-->
+                    <!--create an unordered list for the skills-->
+                    <!--name of the skill and proficiency for each skill-->
+                    <div class="CV_item CV_skills">
+                        <div class="title">
+                            <p class="bold">skills</p>
+                        </div>
+                        <ul>
+                            <li>
+                                <div class="skill_name">
+                                    Java
+                                </div>
+                                <div class="skill_progress">
+                                    <span style="width: 60%;"></span>
+                                </div>
+                                <div class="skill_percentage">60%</div>
+                            </li>
+                            <li>
+                                <div class="skill_name">
+                                    Python
+                                </div>
+                                <div class="skill_progress">
+                                    <span style="width: 60%;"></span>
+                                </div>
+                                <div class="skill_percentage">60%</div>
+                            </li>
+                            <li>
+                                <div class="skill_name">
+                                    Machine Learning
+                                </div>
+                                <div class="skill_progress">
+                                    <span style="width: 30%;"></span>
+                                </div>
+                                <div class="skill_percentage">30%</div>
+                            </li>
+                            <li>
+                                <div class="skill_name">
+                                    Civil 3D
+                                </div>
+                                <div class="skill_progress">
+                                    <span style="width: 90%;"></span>
+                                </div>
+                                <div class="skill_percentage">90%</div>
+                            </li>
+                            <li>
+                                <div class="skill_name">
+                                    HTML
+                                </div>
+                                <div class="skill_progress">
+                                    <span style="width: 30%;"></span>
+                                </div>
+                                <div class="skill_percentage">30%</div>
+                            </li>
+                            <li>
+                                <div class="skill_name">
+                                    CSS
+                                </div>
+                                <div class="skill_progress">
+                                    <span style="width: 30%;"></span>
+                                </div>
+                                <div class="skill_percentage">30%</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--create a class for social media details-->
+                    <!--the title 'social media' show be in bold-->
+                    <!--create an unordered list for social media details-->
+                    <!--add icons fromm Font Awesome and name the different social media platforms also include handles -->
+                    <div class="CV_item CV_social">
+                        <div class="title">
+                            <p class="bold">social media</p>
+                        </div>
+                        <ul>
+                            <li>
+                                <div class="icon"><i class="fab fa-github" aria-hidden="true"></i></div>
+                                <div class="data">
+                                    <p class="semi-bold">
+                                        Github
+                                    </p>
+                                    <p>mamelajikwana@github</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon"><i class="fab fa-linkedin" aria-hidden="true"></i></div>
+                                <div class="data">
+                                    <p class="semi-bold">
+                                        LinkedIn
+                                    </p>
+                                    <p>mamelajikwana@LinkedIn</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--on the right hand side of the cv, add a brief description of yourself, work expience and education background-->
+            <div class = "CV_right">
+                <div class="CV_item CV_about">
+                    <div class="title">
+                        <p class="bold">About Me</p>
+                    </div>
+                    <!--The <p>element represents a paragraph-->
+                    <!--brief description of yourself-->
+                    <p> I completed my National Diploma in Civil Engineering at Nelson Mandela Metropolitan University. 
+                        I completed my experiential training at Gibb (Pty) Ltd. After completing my National Diploma, 
+                        I worked as a Graduate Technician at GIBB 2015- 2016, at UWP Consulting Engineers 2016 - 2018. 
+                        I am currently employed as a Civil Engineering Technician at Ralema Consulting Engineers and 
+                        doing a Software Engineeing short course with HyperionDev. I have decided to make a career change 
+                        to Software Engineering because one has the ability to work in a wide range of industries namely: health, gaming, etc
+            
+                        I am seeking to pursue an opportunity with a growing organisation that will provide me with well-rounded skill set, 
+                        which includes leadership, people, decision and problem solving skills and that will utilise and enhance my knowledge 
+                        in software engineering.</p>
+                </div>
+                <!--create a CV_work and title class, make the 'Work Experience' title bold-->
+                <div class="CV_item CV_work">
+                    <div class="title">
+                        <p class="bold">Work Experience</p>
+                    </div>
+                    <ul>
+                        <li>
+                            <!--create date and information class for work experience-->
+                            <div class="date">Jul 2015 - Jun 2016</div>
+                            <div class="info">
+                                <!--create paragraph class. The role and company name should be semi-bold-->
+                                <p class="semi-bold">Civil Engineering Technician Intern:GIBB Engineering & Architecture</p>
+                                <p>Detailed design and producing concept andconstruction drawings of low cost house plans for2000 evern</p>
+                                <p>Construction monitoring</p>
+                                <p>Quality control</p>
+                                <p>Progress report</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="date">Jul 2016 - May 2018</div>
+                            <div class="info">
+                                <p class="semi-bold">Assistant Residential Engineer UWP Consulting Engineers</p>
+                                <p>Supervising SMME</p>
+                                <p>Tender evaluation for SMME</p>
+                                <p>Quality control</p>                       
+                            </div>
+                        </li>
+                        <li>
+                            <div class="date">Nov 2018 - Present</div>
+                            <div class="info">
+                                <p class="semi-bold">Civil Engineering Technician Ralema Consulting Engineers</p>
+                                <p>Roads and Stormwater designs</p>                            
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!--create a CV_education and title class, make the 'Education Background' title bold-->
+                <div class="CV_item CV_education">
+                    <div class="title">
+                        <p class="bold">Education Background</p>
+                    </div>
+                    <!--unordered list for education background-->
+                    <ul>
+                        <!--list the time period,institutions and qualifications-->
+                        <li>
+                            <!--create date and information class for education background-->
+                            <div class="date">2016</div>
+                            <div class="info">
+                                <!--create paragraph class. The institution name and qualification should be semi-bold-->
+                                <p class="semi-bold">Nelson Mandela University</p>
+                                <p>National Diploma in Civil Engineering</p>                           
+                            </div>
+                        </li>
+                        <li>
+                            <div class="date">2021</div>
+                            <div class="info">
+                                <p class="semi-bold">HyperionDev</p>
+                                <p>Software Engineering Bootcamp</p>                           
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>      
+        </div>
+  </body>
+</html>
+<!--close li,ul,div,body and html-->

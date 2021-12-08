@@ -1,0 +1,219 @@
+/*inport fonts from Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+/*
+margin:creates extra space around an element
+Padding: creates extra space within an element
+border-box: includes the padding and border in an element's total width and height
+font-family: fonts from Google Fonts
+*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+}
+/*
+Change background colour
+the font size should be 14px
+*/
+body{
+    background: #585c68;
+    font-size: 14px;
+    line-height: 22px;
+    color: #555555;
+}
+/*
+anything that is in the bold class should have a font weight of 700(font from google fonts),
+font size 20px and the text should be capital letters
+*/
+.bold{
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+/*
+anything that is in the semi-bold class should have a font weight of 500(font from google fonts) and
+font size 16px
+*/
+.semi-bold{
+    font-weight: 500;
+    font-size: 16px;
+}
+/*.Curriculum_Vitae class*/
+.Curriculum_Vitae{
+    width: 800px;
+    height: auto;
+    display: flex;
+    margin: 50px auto;
+}
+/*.Curriculum_Vitae class and CV_left class with width size 280px and set background colour*/
+.Curriculum_Vitae .CV_left{
+    width: 280px;
+    background: #0bb5f4;
+}
+/*.Curriculum_Vitae class, CV_left and CV_profile class*/
+.Curriculum_Vitae .CV_left .CV_profile{
+    width: 100%;
+    height: 280px;
+}
+/* setting the width and height for the profile picture whi is in these classes Curriculum_Vitae class, CV_left and CV_profile class*/
+.Curriculum_Vitae .CV_left .CV_profile img{
+    width: 100%;
+    height: 100%;
+}
+/*no padding for the the top and bottom, 25px padding for left and right for CV_content class*/
+.Curriculum_Vitae .CV_left .CV_content{
+    padding: 0 25px;
+}
+/*the margin for the bottom of the title class is 20px*/
+.Curriculum_Vitae .title{
+    margin-bottom: 20px;
+}
+/* change the bold text colour*/
+.Curriculum_Vitae .CV_left .bold{
+    color: #fff;
+}
+/* change the CV_item regular text colour*/
+.Curriculum_Vitae .CV_left .regular{
+    color: #b1eaff;
+}
+/* add a line to separate the items*/
+.Curriculum_Vitae .CV_item{
+    padding: 25px 0;
+    border-bottom: 2px solid #b1eaff;
+}
+/*
+remove the line to separate the items on the last element(last child)
+last-child represents the last element among a group of sibling elements.
+*/
+.Curriculum_Vitae .CV_left .CV_item:last-child,
+.Curriculum_Vitae .CV_right .CV_item:last-child{
+    border-bottom: 0px;
+}
+
+.Curriculum_Vitae .CV_left ul li{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+/*after the last element(last child) of the list the margin-bottom should be zero*/
+.Curriculum_Vitae .CV_left ul li:last-child{
+    margin-bottom: 0;
+}
+/*
+the icons in the unordered list class should have a width and height of 35px, 
+white background colour,border-radius(to round the corners of the outer border) of 50%
+there will be a 15px margin(space) between the icon and the text
+size of the icons will be 16px
+*/
+.Curriculum_Vitae .CV_left ul li .icon{
+    width: 35px;
+    height: 35px;
+    background-color: #fff;
+    color: #0bb5f4;
+    border-radius: 50%;
+    margin-right: 15px;
+    font-size: 16px;
+    position: relative;
+}
+/*the icon is vertically and horizontally centered*/
+.Curriculum_Vitae .icon i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+/*change the data colour for all the elements on the left hand side of the cv and are in unordered lists*/
+.Curriculum_Vitae .CV_left ul li .data{
+    color: #b1eaff;
+}
+/*for the skills class add a space between the skill and profiency/percentage*/
+.Curriculum_Vitae .CV_left .CV_skills ul li{
+    color: #b1eaff;
+    justify-content: space-between;
+}
+.Curriculum_Vitae .CV_left .CV_skills ul li .skill_name{
+    width: 25%;
+}
+.Curriculum_Vitae .CV_left .CV_skills ul li .skill_progress{
+    width: 60%;
+    margin: 0 5px;
+    height: 5px;
+    background: #009fd9;
+    position: relative;
+}
+.Curriculum_Vitae .CV_left .CV_skills ul li .skill_percentage{
+    width: 15%;  
+}
+.Curriculum_Vitae .CV_left .CV_skills ul li .skill_progress span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #fff;
+}
+/*
+right hand side of the cv
+width is 520px, background colour is white and padding for all the sides of the content is 25px
+*/
+.Curriculum_Vitae .CV_right{
+    width: 520px;
+    background-color: #fff;
+    padding: 25px;
+}
+/*bold text will be in the colour blue on the RHS of the cv*/
+.Curriculum_Vitae .CV_right .bold{
+    color: #0bb5f4;
+}
+/*space/padding for work and education unordered lists will 40p on the left*/
+.Curriculum_Vitae .CV_right .CV_work ul,
+.Curriculum_Vitae .CV_right .CV_education ul{
+    padding-left: 40px;
+    overflow: hidden;
+}
+/*position: relative is positioned relative to its normal position*/
+.Curriculum_Vitae .CV_right ul li{
+    position: relative;
+}
+/*
+dates on the RHS of the cv should have a font size of 16px
+font size(from Google fonts) of 500 and
+the bottom margin(before the job description, company name and institution name are added) should be 15px
+*/
+.Curriculum_Vitae .CV_right ul li .date{
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+/*bottom margin between the information on each list is added is 20px*/
+.Curriculum_Vitae .CV_right ul li .info{
+    margin-bottom: 20px;
+}
+/*the last element(last-child) of the info class should have no spaces(margin-bottom: 0)*/
+.Curriculum_Vitae .CV_right ul li:last-child .info{
+    margin-bottom: 0;
+}
+/*for the work and education class which are on the RHS of the cv add round solid border 2px which need to be before the list start*/
+.Curriculum_Vitae .CV_right .CV_work ul li:before,
+.Curriculum_Vitae .CV_right .CV_education ul li:before{
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -25px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    border: 2px solid #0bb5f4;
+}
+.Curriculum_Vitae .CV_right .CV_work ul li:after,
+.Curriculum_Vitae .CV_right .CV_education ul li:after{
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: -21px;
+    width: 2px;
+    height: 220px;
+    background: #0bb5f4;
+}
