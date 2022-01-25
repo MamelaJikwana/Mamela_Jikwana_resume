@@ -50,7 +50,7 @@ font size 16px
 }
 /*.Curriculum_Vitae class and CV_left class with width size 280px and set background colour*/
 .Curriculum_Vitae .CV_left{
-    width: 280px;
+    width: 320px;
     background: #0bb5f4;
 }
 /*.Curriculum_Vitae class, CV_left and CV_profile class*/
@@ -109,13 +109,13 @@ there will be a 15px margin(space) between the icon and the text
 size of the icons will be 16px
 */
 .Curriculum_Vitae .CV_left ul li .icon{
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
     background-color: #fff;
     color: #0bb5f4;
     border-radius: 50%;
     margin-right: 15px;
-    font-size: 16px;
+    font-size: 12px;
     position: relative;
 }
 /*the icon is vertically and horizontally centered*/
